@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #48cae4;
+}
+.container{
+    margin: 0 auto auto 0;
+    background-color: whitesmoke;
+    width: 20em;
+    height: 16em;
+    font-size: larger;
+    font-weight:200;
+    margin: 25vh 0 0 35vw;
+    padding: 0.6rem 0 0 0.6rem;
+    }
+#data-copyMsg{
+    position: relative;
+    bottom: 10px;
+    transition: background-color 0.8s ease-out;
+    font-size: medium;
+}
+#heading{
+    font-weight: 600;
+    background-image: linear-gradient(to left, #42275a, #734b6d);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-bottom: 5px;
+}
+.display{
+    margin-bottom: 5px;
+}
+#strength{
+    display: flex;
+    justify-content:space-between;
+}
+#circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:wheat;
+}
+#button-gen div button{
+    font-size: medium;
+    background-color: black;
+    color: whitesmoke;
+    margin-top: 6px;
+    padding: 3px;
+}

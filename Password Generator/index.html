@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="assets/padlock.png">
+</head>
+<body>
+    <div class="container">
+    <!-- heading -->
+    <div>
+        <h1 id="heading">Password Generator</h1>
+        <!-- <br> -->
+    </div>
+    <!-- generator -->
+    <div class="display">
+        <input type="text" placeholder="PASSWORD" readonly id="display-pass">
+        <button id="copy-pass">
+            <i class="fa-solid fa-copy"></i>
+        </button>
+        <span id="data-copyMsg"></span>
+    </div>
+    <!-- checkBox -->
+    <div class="gen">
+        <div id="display-slider">
+            <label for="silder" id="pass">Password Length - </label>
+            <span id="passlength"></span>
+            <br>
+            <input type="range" id="silder" name="silder" min="1" max="20">
+          </div>
+          <div>
+            <input type="checkbox" name="uppercase" id="uppercase">
+            <label for="uppercase">Include UpperCase Letter</label>
+            <br>
+
+            <input type="checkbox" name="lowercase" id="lowercase">
+            <label for="lowercase">Include LowerCase Letter</label>
+            <br>
+
+            <input type="checkbox" name="number" id="number">
+            <label for="number">Include Number</label>
+            <br>
+
+            <input type="checkbox" name="symbols" id="symbols">
+            <label for="symbols">Include Symbols</label>
+          </div>
+    </div>      
+    <!-- strength-->
+    <div id="strength"> 
+        <p>Strength</p>
+        <div id="circle"></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- Submit Button -->
+    <div id= "button-gen">
+        <div>
+            <button type="submit" id="pass-gen">GENERATE PASSWORD</button>
+        </div>
+        <!-- Reset Button -->
+        <div>
+            <button type="submit" id="pass-regen">RESET</button>
+        </div>
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
